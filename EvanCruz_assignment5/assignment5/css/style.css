@@ -1,0 +1,146 @@
+/*
+
+blue: rgb(60,61,90)
+green: rgb(117,150,145)
+yellow: rgb(247,216,160)
+brown: rgb(203,157,126)
+burgundy: rgb(111,61,69)
+
+*/
+
+body {
+	background: rgb(60,61,90);
+	font-family: verdana, sans-serif;
+	font-size: .8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Courier New", serif;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+a {
+	color: rgb(111,61,69);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+table th,
+table td {
+	border: 1px solid black;
+	padding: 6px;
+}
+
+#page {
+	border: 2px dashed rgb(247,216,160);
+	width: 900px;
+	margin: auto;
+}
+
+#page-inner {
+	margin: 15px;
+	padding: 15px;
+	background: #fff;
+}
+
+#head {
+	text-align: center;
+	border-bottom: 3px solid rgb(111,61,69);	
+}
+
+#nav {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+	width: 100%;
+}
+
+#nav ul,
+#nav ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul li a {
+
+	float: left;
+	display: block;
+	padding: 10px;
+	margin-right: 10px;
+	border: 2px solid rgb(117,150,145);
+	background: rgb(247,216,160);
+	color: rgb(60,61,90);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#nav ul li a:hover {
+	background: rgb(60,61,90);
+	color: rgb(247,216,160);
+	cursor: crosshair;
+	border-width: 0;
+	padding: 12px;
+}
+
+#nav ul li a.current {
+	text-decoration: underline;
+}
+
+#foot {
+	margin-top: 15px;
+	border-top: 3px solid rgb(111,61,69);
+	text-align: center;
+}
+
+.task {
+	border-bottom: 3px solid rgb(111,61,69);
+	padding: 10px;
+	margin: 20px 0;
+	overflow: auto;
+	height: 100%;
+}
+
+/* 
+.task:last-of-type {
+	border: 0;
+}
+ */
+
+img {
+	border: 1px solid rgb(111,61,69);
+	float: right;
+}
+
+.t1_colors {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	border: 1px solid rgb(111,61,69);
+}
+
+code {
+	font-size: 12px;
+}
+
+

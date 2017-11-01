@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="name" content="Evan Cruz">
+        <meta name="description" content="INFX1606 Assignment #5">
+
+        <title>INFX1606 Assignment #5</title>
+
+ 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+ 		
+    </head>
+    <body>
+
+		<div id="page">
+		
+			<div id="page-inner">
+
+				<div id="head">
+				
+					<h1>INFX1606 Assignment #5</h1>
+				
+				</div>
+
+				<div id="nav">
+
+					<ul>
+						<li><a href="#task1">Task 1</a></li>
+						<li><a href="#task2">Task 2</a></li>
+						<li><a href="#task3">Task 3</a></li>
+						<li><a href="#task4">Task 4</a></li>
+						<li><a href="#task5">Task 5</a></li>												
+					</ul>
+
+				</div>
+
+
+				<div id="content">
+				
+					<p><strong>Read the Intro and Tips section at the bottom!</strong></p> 
+				
+
+					<div id="task1" class="task">
+						<h2>Task 1</h2>
+						
+						<p>Change the background color, of the div that contains this task, to the color in each box when the box is hovered over.</p>
+						<p>When the mouse stops hovering over the box, change the background color back to white.</p>
+						
+						<div id="t1_color_one" class="t1_colors" style="background:	hotpink;"></div>
+						<div id="t1_color_two" class="t1_colors" style="background: lightgreen;"></div>
+						<div id="t1_color_three" class="t1_colors" style="background: palevioletred;"></div>
+					</div>
+
+					<div id="task2" class="task">
+						<h2>Task 2</h2>
+
+						<!-- image courtesy Google Chrome -->		
+						<img src="media/chrome.png" alt="Chrome Browser" id="chrome_browser">
+
+						<ol>
+							<li>First click: Move the Chrome icon to the bottom, left corner of the page.</li>
+							<li>Second click: Move the Chrome icon back to it's original spot.</li>
+							<li>Further clicks: Continue the cycle.</li>
+						</ol>
+						<input type="button" value="Move" id="task2control">		
+
+					</div>
+
+					<div id="task3" class="task">
+						<h2>Task 3</h2>
+
+						<!-- image courtesy wikipedia: http://en.wikipedia.org/wiki/File:TARDIS2.jpg -->
+						<img src="media/tardis.jpg" alt="The Tardis" id="tardis">
+
+						<p>Make the Tardis transparent to degree of the specified percentage.</p>
+						<select name="task3control" id="task3control">
+							<option>Select One</option>
+							<option>0%</option>
+							<option>10%</option>
+							<option>20%</option>	
+							<option>30%</option>
+							<option>40%</option>
+							<option>50%</option>
+							<option>60%</option>
+							<option>70%</option>
+							<option>80%</option>
+							<option>90%</option>							
+							<option>100%</option>
+						</select>    				
+						
+	
+					</div>
+
+					<div id="task4" class="task">
+						<h2>Task 4</h2>
+						<p>Take whatever is typed into the textfield and print it out into the webpage. The output must update immediately following every character entry.</p>
+						<p>When focus is taken away from the textfield, log the textfield contents to the console, and clear the textfield &amp; the output from the page.</p>
+						<input type="text" name="task4control" id="task4control">
+						<p id="task4_output"></p>
+				
+				
+					</div>
+
+					<div id="task5" class="task">
+						<h2>Task 5</h2>
+						<p>On page load, print out the current hour, minute, and second.<br>
+						If the second is evenly divisible by 5, also print "Break time!".</p>
+						
+						<p>You'll probably find the <a href="http://www.w3schools.com/jsref/jsref_obj_date.asp">reference on Date objects</a> helpful.</p>
+						<p id="currentTime"></p>
+						<p id="breakTime"></p>
+					</div>
+					
+
+					<h2>Intro and Tips</h2>
+				
+					<p>Write the JavaScript <strong>(No jQuery or other libraries!)</strong> required to make the tasks work as required in each task description. Add any HTML/CSS that you consider necessary, but do not fundamentally alter the layout of the page. These are meant to be straight-forward exercises, intended to build up towards using JavaScript &amp; events in more practical situations. </p>
+					
+					<p>You may find documentation such as the <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> (and the <a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events">Event Reference List</a> in particular) useful.</p>
+				
+					<p>Remember some of the basic, such as manipulating style and listening for an event.</p>
+					
+					<p>Changing the padding style of an element with the id <em>demo</em>:</p>
+					
+<pre>
+<code>
+// Here we query the <em>document</em> (i.e. the webpage) for the tag with id <em>demo</em>
+// the_target is the variable name that will represent the result of our search, i.e. the tag that is found
+
+var the_target = document.querySelector('#demo');
+
+// The <em>style</em> keyword is always used.
+// The particular CSS style in this case is <em>padding</em>, but any CSS style can be manipulated
+
+the_target_style.style.padding = '20px';
+</code>
+</pre>
+
+<p>Attaching an event to the id <em>sample</em>:</p>
+
+<pre>
+<code>				
+
+// Same idea as before, identify the tag that we want to work with
+
+var my_sample = document.querySelector('#sample');
+
+// Using the <em>addEventListener</em> method we bind a <em>click</em> event listener to the tag
+// There are many event types... experiment with them!
+
+my_sample.addEventListener('click', function() {
+	console.log('The element was clicked');
+});
+
+// Binding a <em>mouseover</em> event listener to the same element
+// Using the <em><strong>this</strong></em> keyword we can refer to the element that is experiencing the event
+// In this example, <em><strong>this</strong></em> is referring to <em>my_sample</em> because <em><strong>this</strong></em> is used
+// inside the function that is run during the mouseover 
+// Thus the <em>my_sample</em> element will gain a border of <em>1px solid blue</em> on mouseover
+
+my_sample.addEventListener('mouseover', function() {
+	this.style.border = '1px solid blue';
+});
+
+</code>
+</pre>					
+					
+					
+				</div>
+
+	
+ 			</div>
+ 
+		</div> 
+
+ 		<script type="text/javascript" src="js/scripts.js"></script>
+
+    </body>
+</html>
