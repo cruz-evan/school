@@ -1,0 +1,23 @@
+Python 2.7.10 (default, May 23 2015, 09:40:32) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+A B 1 Packet discarded
+X B 3 Frame sent on port 1
+A M 1 Frame broadcast on all out ports
+M X 4 FDB updated; Frame sent on port 3
+C D 2 Packet discarded
+>>> ================================ RESTART ================================
+>>> 
+Enter the router file name without a .txt ending:
+a3q2route
+Enter the destination file name without a .txt ending:
+a3q2dest
+
+
+Packet with destination address 192.168.1.1  will be forwarded to 192.168.4.2 out on interface S0
+Packet with destination address 192.168.2.1 will be forwarded to 192.168.6.5 out on interface S0
+Packet with destination address 192.168.2.2 will be forwarded to 192.168.1.5 out on interface E0
+Packet with destination address 192.168.5.8 will be forwarded to 192.168.2.5 out on interface S1
+Packet with destination address 192.168.4.28 will be forwarded to 192.168.3.1 out on interface S2
+>>> 
