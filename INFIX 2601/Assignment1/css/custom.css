@@ -1,0 +1,47 @@
+#wrap{
+	width: 50%;
+	margin: auto;
+	margin-top:30px;
+	border: solid black 1px;
+	min-height: 800px;
+	background-color: #fff;
+}
+body{
+	background-color: #e0e2bc;
+}
+#inner-wrap{
+	width: 80%;
+	margin: auto;
+	border: dotted black 1px;
+	padding: 5px;
+	overflow:auto;
+}
+#playername{
+	width: 50%;
+}
+#lowwrap{
+	width:50%;
+	border: solid black 1px;
+	margin: auto;
+	min-height: 200px;
+	margin-top: 30px;
+	background: #fff;
+	padding: 20px;
+	overflow:auto;
+}
+#lowwrap p{
+	margin-top: 20px;
+}
+.errorMsg{
+	color: red;
+}
+h1{
+	text-align:center;
+}
+.forms{
+	margin-top: 30px;
+	border-bottom: 1px dotted black;
+}
+.borderErr{
+	border: solid red 1px;
+}
