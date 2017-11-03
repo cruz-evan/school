@@ -1,0 +1,22 @@
+
+body
+{
+	background:white;
+}
+.footer .container
+{
+	background:black;
+}
+.footietext
+{
+	opacity:.7;
+	color: #ffb326;
+}
+p a
+{
+	color:grey;
+}
+p a:hover
+{
+	color:white;
+}
