@@ -1,0 +1,199 @@
+/*--------------------------------Alta Main Page-----------------------*/
+body{
+	background: url(../media/BackgroundMain.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#ContentHold{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	overflow: auto;
+	position:relative;
+	background-color: #e6e6e6;
+}
+#SmallContentHold{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	overflow: auto;
+	font-family: 'Ariel', sans-serif;
+	background-color:white;
+	min-height:700px;
+	overflow:auto;
+}
+#SmallContentHold h2{
+	font-size: 30px;
+}
+#SmallContentHold p{
+	font-size: 20px;
+}
+.AltaHome{
+	margin:auto;
+	float:right;
+	width:75px;
+	height:75px;
+}
+.Alta-menu{
+	margin:auto;
+	float:left;
+	width:75px;
+	height:75px;
+}
+.Alta-menu img:hover{
+	opacity:.7;
+}
+.AltaHome img:hover{
+	opacity:.7;
+}
+#mainFooter{
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	padding: 10px;
+	border-top: 2px solid LightGray;
+	width: 90%;
+	height: 100%;
+	overflow: auto;
+}
+#mainFooter h3{
+	font-size: 12px;
+	font-family: 'Ariel', sans-serif;
+	margin-top:10px;
+	border-bottom: 1px solid black;
+}
+#mainFooter p{
+	font-size: 10px;
+	font-family: 'Ariel', sans-serif;
+}
+#titleBar{
+	z-index: 100;
+	width:100%;
+	text-align: center; 	
+	font-family: 'Ariel', sans-serif;
+	font-size:30px;
+	margin-bottom: 0px;
+	position:relative;
+}
+#titleBar h1{
+	padding-bottom: 20px;
+	border-bottom: 2px solid black;
+	display:block;
+	font-size:40px;
+}
+
+#links li{
+	font-family: 'Georgia', serif;
+}
+#links a:hover{
+	background: white;
+	color: black;
+}
+#links a:active{
+    background-color: black;
+	color: white;
+}
+
+th{
+	border: 1px solid black;
+}
+
+td{
+	font-size: 12px;
+	border: 1px solid black;
+	width: 12%;
+}
+table{
+	overflow:auto;
+	table-layout: fixed;
+	height:500px;
+	width:100%;
+	margin-bottom: 30px;
+}
+.NoClass {
+	background-color: #c7f2cd;
+}
+.DaveGroup {
+	background-color: #d2c7f2;
+}
+.OtherGroups {
+	background-color: #f2c7ca;
+}
+.AllGroups {
+	background-color: #c7f2e8;
+}
+.footInner{
+	min-width: 33%;
+	clear:both;
+}
+@media (min-width: 800px){
+	#SmallContentHold{
+		width: 70%;
+		height: 100%;
+		margin: auto;
+		overflow: auto;
+		font-family: 'Ariel', sans-serif;
+		background-color:white;
+		min-height:700px;
+		overflow:auto;
+	}
+	#ContentHold{
+		width: 80%;
+		height: 100%;
+		margin: auto;
+		overflow: auto;
+		position:relative;
+		background-color: #e6e6e6;
+	}
+}
+@media (min-width: 1200px){
+	.footInner{
+		clear:none;
+		float:left;
+		max-width: 33%;
+	}
+}
+
+/*--------------------------------Alta Pictures-----------------------*/
+.tooltip {
+	width:50%;
+}
+img{
+	max-width: 100%;
+}
+
+/*--------------------------------Alta Contact-----------------------*/
+.contactInfo{
+	margin-top: 50px;
+}
+
+.contactInfo p{
+	line-height:1px;
+}
+
+/*--------------------------------Alta Competitions-----------------------*/
+#comps h4{
+	margin-top: 50px;
+	margin-bottom: 0px;
+	font-size: 24px;
+}
+#comps p{
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/*----------------------------------Alta Documentation--------------------*/
+#SmallContentHold .docData p{
+	font-size: 14px;
+	margin-top:5px;
+}
+.docData h5{
+	margin-top:10px;
+	margin-bottom: 0px;
+	font-size:15px;
+}
+.docData h3{
+	margin-top: 40px;
+	margin-bottom:5px;
+}

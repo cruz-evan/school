@@ -1,0 +1,242 @@
+.headie 
+{
+	margin: auto;
+	padding: 0;
+	height: 100%;
+	overflow: auto;
+	border-bottom: 2px solid black;
+	width:80%;
+	background:white;
+}
+body
+{
+	background:white;
+}
+.banner
+{
+	margin:auto;
+	overflow:auto;
+	width:80%;
+}
+#main
+{
+	margin:auto;
+	margin-top: 30px;
+	border: 1px solid black;
+	overflow:auto;
+	width:80%;
+	background:#F5F5DC;
+}
+img 
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+li
+{
+	list-style-type: none;
+    margin: 0;
+	display: inline;
+}
+.headie li a {
+    display: inline block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.headie li a:hover {
+    background-color: grey;
+    color: white;
+}
+h3
+{
+	margin:auto;
+	width:80%;
+	overflow: auto;
+	padding-bottom:10px;
+}
+h4
+{
+	width:90%;
+	border-bottom:1px blue solid;
+	margin:auto;
+	overflow:auto;
+}
+form
+{
+	margin:auto;
+	width:80%;
+	overflow: auto;
+	padding-top:10px;
+	padding-bottom:20px;
+}
+.footie
+{
+	margin: auto;
+	border: 1px solid black;
+	overflow: auto;
+	margin-top: 50px;
+	width:80%;
+	background:white;
+}
+.footie p
+{
+	margin:auto;
+	margin-left:50px;
+	overflow: auto;
+}
+.footie ol
+{
+	margin:auto;
+	margin-left:10px;
+	overflow: auto;
+}
+.threeCol
+{
+	padding-top:15px;
+	margin:auto;
+	width: 33%;
+	display:inline-block;
+	float:left;
+}
+.threeColMid
+{
+	padding-top:15px;
+	margin:auto;
+	width: 33%;
+	display:inline-block;
+	float:left;
+	border-left: 1px dotted blue;
+	border-right: 1px dotted blue;
+}
+.threeCol p
+{
+	margin:auto;
+	width:80%;
+	overflow: auto;
+	padding-bottom:10px;
+}
+.threeColMid p
+{
+	margin:auto;
+	width:80%;
+	overflow: auto;
+	padding-bottom:10px;
+}
+.twoCol
+{
+	padding-top:15px;
+	margin:auto;
+	width: 49%;
+	display:inline-block;
+	float:left;
+}
+/* Format for screens below 320px */
+/* Changes the footer columns from two to one */
+@media (max-width: 320px) {
+
+	.banner{
+		display:none;
+	}
+	.threeCol {
+		margin: auto;
+		margin-bottom:10px;
+		margin-top:10px;
+		margin-left:10px;
+		width: 96%;
+		max-width:300px;
+		float:left;
+	}
+	.threeColMid
+	{
+		padding-top:15px;
+		margin:auto;
+		width: 96%;
+		display:inline-block;
+		float:left;
+		border-top: 1px dotted blue;
+		border-bottom: 1px dotted blue;
+		border-left:none;
+		border-right:none;
+	}
+	.twoCol
+	{
+		padding-top:15px;
+		margin:auto;
+		width: 96%;
+	}
+}
+/* Format for screens between 320px and 768p */
+/* Removes the banner */
+@media (min-width: 320px) and (max-width: 768px) {
+
+	.banner{
+		display:none;
+	}
+	.threeCol {
+		margin: auto;
+		margin-bottom:10px;
+		margin-top:10px;
+		margin-left:10px;
+		width: 96%;
+		max-width:648px;
+		float:left;
+	}
+	.threeColMid
+	{
+		padding-top:15px;
+		margin:auto;
+		width: 96%;
+		display:inline-block;
+		float:left;
+		border-top: 1px dotted blue;
+		border-bottom: 1px dotted blue;
+		border-left:none;
+		border-right:none;
+	}
+}
+/* Format for screens between 768px and 960px */
+/* It moves the columns from 3 to one column */
+@media (min-width: 768px) and (max-width: 960px) {
+	
+	.threeCol {
+		margin: auto;
+		margin-bottom:10px;
+		margin-top:10px;
+		margin-left:10px;
+		width: 96%;
+		max-width:648px;
+		float:left;
+	}
+	.threeColMid
+	{
+		padding-top:15px;
+		margin:auto;
+		width: 96%;
+		display:inline-block;
+		float:left;
+		border-top: 1px dotted blue;
+		border-bottom: 1px dotted blue;
+		border-left:none;
+		border-right:none;
+	}
+}
+@media (max-width: 1200px) {
+
+	li
+	{
+		list-style-type: none;
+		margin: 0;
+		display: block;
+	}
+	.headie li 
+	{
+		color: black;
+		margin-top: 20px;
+		text-decoration: none;
+	}
+	.headie li a
+	{
+		display: block;
+	}
+}
